@@ -32,26 +32,51 @@ var generateBtn = document.querySelector("#generate");
 // Add eventlistener to generateBtn runs the writePassword function after 'click' occurs
 generateBtn.addEventListener("click", writePassword);
 
+// writePassword has an undefined function generatePassword, 
+// for generatePassword to meet acceptance criteria will require a prompts function
+function writePassword () {
+  var correctPrompts = prompts(); // true or false
+  var passwordText = document.querySelector('#password');
 
-
-function generatePassword(){
-  console.log('The generate password button has been pushed, eventlistener working correctly.')
-return {
-  name: 'kate',
-
-}
-}
-
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");  
+  if (correctPrompts) {
+    var newPassword = generatePassword();
   
-  passwordText.value = password.name;
+    passwordText.value = newPassword;
+  } else {
+    passwordText.value = '';
+  }
 
 }
+function prompts (){
+  //set to empty so you always restart?
+  choiceRay = [];
+  //parseInt converts the returned string into an integer
+  characterLength = parseInt(prompt('Password Length: Choose between 8 and 128 characters'))
+  
+  //make sure user has typed a number not a string, and between correct length 
+  //if you type the right thing then this will return false
+  if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert('Character length must be a number between 8 and 128.');
+    return false;
+  } 
+
+  if (confirm('Include lowercase letters in your password?')) {
+    choiceRay = choiceRay.concat(lowerCaseRay);
+  }
+
+  if (confirm('Include uppercase letters in your password?')) {
+    choiceRay = choiceRay.concat(upperCaseRay);
+  }
+
+  if (confirm('Include special characters in your password?')) {
+  choiceRay = choiceRay.concat(specialCharRay);
+  }
+  if (confirm('Include numbers in your password?')) {
+  choiceRay = choiceRay.concat(numberRay);
+  }
+  return true;
+}
+
 
 
 
