@@ -17,9 +17,9 @@ function writePassword() {
   var passwordText = document.querySelector("#password");  
   
   var inputConfigurations = document.querySelector('#input-configurations');
- // inputConfigurations.setAttribute('style', 'display: block');
+inputConfigurations.setAttribute('style', 'display: block');
   
-  //document.querySelector('#input-configurations').setAttribute('style', 'display: block');
+document.querySelector('#input-configurations').setAttribute('style', 'display: block');
 
   passwordText.value = password.name;
 
@@ -27,6 +27,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-// document.querySelector('#character-length').addEventListener('change',(event) => {
-//  document.querySelector('#length-result').innerText = event.target.value;
-//})
+document.querySelector('#character-length').addEventListener('change',(event) => {
+document.querySelector('#length-result').innerText = event.target.value;
+})
