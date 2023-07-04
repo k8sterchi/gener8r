@@ -1,7 +1,23 @@
+// function generatePassword() {
+//   console.log('The generate button has been pushed; event listener working correctly.')
+// 1. Prompt the user for the password criteria
+//    1a. password length between 8 and 128
+//    2a. lowercase, uppercase, numbers, special characters
+// 2. Validate the input -- ensure user input is valid
+//      character length is a number between 8 and 128, 
+//      ensure at least one character type is selected
+// 3. Generate password based on criteria.
+
+
+// 4. Display on the page, this is already working... 
+//  return 'generated password will go here';
+// }
+
 
 // Assignment code here
 
 function generatePassword(){
+  console.log('The generate password button has been pushed, eventlistener working correctly.')
 return {
   name: 'kate',
 
@@ -16,17 +32,15 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
   
-  var inputConfigurations = document.querySelector('#input-configurations');
-inputConfigurations.setAttribute('style', 'display: block');
   
-document.querySelector('#input-configurations').setAttribute('style', 'display: block');
-
+  
+  
   passwordText.value = password.name;
 
 }
 
-// Add event listener to generate button
+// Add eventlistener to generate button
 generateBtn.addEventListener("click", writePassword);
-document.querySelector('#character-length').addEventListener('change',(event) => {
-document.querySelector('#length-result').innerText = event.target.value;
-})
+
+
+
