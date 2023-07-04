@@ -81,17 +81,26 @@ function prompts (){
   if (confirm('Include special characters in your password?')) {
   choiceRay = choiceRay.concat(specialCharRay);
   }
+
   if (confirm('Include numbers in your password?')) {
   choiceRay = choiceRay.concat(numberRay);
   }
   return true;
 }
 
+// TODO: ensure that the user selects at least one character type:
+// if the user clicks cancel to all prompts, 
+// then alert appears:'you must select at least one character type'
+// 
 
-
-
-
-
-
+// if (confirm('Include lowercase letters in your password?')) 
+// and
+// if (confirm('Include uppercase letters in your password?'))
+// and
+// if (confirm('Include special characters in your password?'))
+// and
+// if (confirm('Include numbers in your password?'))
+// return false; meaning user selected 'cancel' for all 
+// alert('You must select at least one character type.')
 
 
