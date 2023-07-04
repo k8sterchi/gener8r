@@ -32,6 +32,16 @@ var generateBtn = document.querySelector("#generate");
 // Add eventlistener to generateBtn runs the writePassword function after 'click' occurs
 generateBtn.addEventListener("click", writePassword);
 
+function generatePassword() {
+  console.log('The generate button has been pushed; event listener working correctly.')
+  var password = '';
+  for (var i = 0; i < characterLength; i++){
+  var randomIndex = Math.floor(Math.random() * choiceRay.length)
+  password = password + choiceRay[randomIndex];
+ }
+  return password;
+}
+
 // writePassword has an undefined function generatePassword, 
 // for generatePassword to meet acceptance criteria will require a prompts function
 function writePassword () {
@@ -76,6 +86,8 @@ function prompts (){
   }
   return true;
 }
+
+
 
 
 
