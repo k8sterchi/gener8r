@@ -15,6 +15,24 @@
 
 
 // Assignment code here
+// store data into variables i will need in order to write and generate password
+var characterLength = 8;
+// Array where i will store all possible letters symbols numbers 
+var choiceRay = [];
+// Arrays to store all the characters
+var specialCharRay = ['_',')','(','*','&','^','%','$','#','@','!'];
+var lowerCaseRay = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var upperCaseRay = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var numberRay = ['1','2','3','4','5','6','7','8','9','0'];
+
+// Get references to the #generate element
+// generateBtn holds the value of element in the html with the ID generate 
+var generateBtn = document.querySelector("#generate");
+
+// Add eventlistener to generateBtn runs the writePassword function after 'click' occurs
+generateBtn.addEventListener("click", writePassword);
+
+
 
 function generatePassword(){
   console.log('The generate password button has been pushed, eventlistener working correctly.')
@@ -24,23 +42,18 @@ return {
 }
 }
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
   
-  
-  
-  
   passwordText.value = password.name;
 
 }
 
-// Add eventlistener to generate button
-generateBtn.addEventListener("click", writePassword);
+
 
 
 
