@@ -4,7 +4,7 @@
 
 This web application generates random passwords based on user input. I used JavaScript to make the generator interactive and user friendly, prompting the user to enter desired criteria as well as redirecting the user if done incorrectly. Great for employees with access to sensitive data who need to create a strong password. 
 
-💝 Check out my password generator here 💝
+💝 [Check out my password generator here](https://k8sterchi.github.io/gener8r/) 💝
 
 ## Application Preview
 
