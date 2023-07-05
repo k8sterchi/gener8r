@@ -1,5 +1,7 @@
-# Password Generator Starter Code
-add custom title and description 
+# K8's Password Gener8r
+## Description
+This application generates random passwords based on user input. I wanted to see how JavaScript can create interactivity and enhance the ease of the user experience. 
+
 # Acceptance Criteria
 #### GIVEN I need a new, secure password
 #### WHEN I click the button to generate a password
