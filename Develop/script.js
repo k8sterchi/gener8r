@@ -12,6 +12,8 @@ var numberArr = ['1','2','3','4','5','6','7','8','9','0'];
 // generateBtn holds the value of the ID generate tag in the html 
 var generateBtn = document.querySelector("#generate");
 document.querySelector('#generate').style.background = 'pink';
+document.querySelector('#generate').style.color = 'green';
+document.querySelector('h1').style.background = '#a2f1a6';
 
 // Add eventlistener to generateBtn; runs the writePassword function after 'click' occurs
 generateBtn.addEventListener("click", writePassword);
@@ -23,9 +25,9 @@ function generatePassword() {
     var undefinedTextArea = document.querySelector('#password');
     alert('you must select at least one character type');
     console.log('The user has not selected a character type.');
-    undefinedTextArea.value = 'try again'; //not working... ???
-    return;
+    return undefinedTextArea.value = 'try again';
     }
+
   var password = '';
   // length of choiceArr * number between 0 and 1 creates a random decimal, .floor rounds the decimal down, giving index position for one character of the pw
   // loops according to criteria of the for loop until characterLength is satisfied 
@@ -81,11 +83,4 @@ function userPrompts (){
   }
   return true;
 }
-
-// TODO: ensure that the user selects at least one character type:
-// if the user clicks cancel to all userPrompts, 
-// then alert appears:'you must select at least one character type'
-// if choice array is empty, alert user to select at least one character type.
-// t or f array has length > 0
-
 
