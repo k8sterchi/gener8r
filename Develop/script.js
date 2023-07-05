@@ -25,7 +25,7 @@ function generatePassword() {
     var undefinedTextArea = document.querySelector('#password');
     alert('you must select at least one character type');
     console.log('The user has not selected a character type.');
-    return undefinedTextArea.value = 'try again';
+    return undefinedTextArea.value = 'Please begin again.';
     }
 
   var password = '';
