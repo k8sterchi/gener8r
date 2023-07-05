@@ -83,4 +83,3 @@ function userPrompts (){
   }
   return true;
 }
-
