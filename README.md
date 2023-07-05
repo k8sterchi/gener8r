@@ -48,5 +48,8 @@ Below is a link to the math built-in object as well as links to the specific met
 
 [🚀 `math.floor()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 
+
+[🚀 This forum](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) and [🚀 this forum](https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array) helped me as I was trying to understand how to randomize values from an array. 
+
 [🚀 This YouTube video](https://www.youtube.com/watch?v=x4HUaiazDes) helped me get started by guiding me through the importance of pseudo-coding as a way to begin mapping out what you want your code to accomplish. 
 
