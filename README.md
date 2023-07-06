@@ -33,7 +33,7 @@ SO THAT I can create a strong password that provides greater security
 > * WHEN the password is generated
 > * THEN the password is either displayed in an alert or written to the page
 
-## Helpful Resources
+## Helpful Resources...
 
 [🚀 Starter Code found here.](https://github.com/coding-boot-camp/friendly-parakeet) 
 
