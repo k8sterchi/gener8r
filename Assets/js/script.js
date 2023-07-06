@@ -19,7 +19,7 @@ document.querySelector('h1').style.background = '#a2f1a6';
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  console.log('The generate button has been pushed; event listener working correctly.');
+console.log('The generate button has been pushed; event listener working correctly.');
 
   if (choiceArr.length <= 0) {
     var undefinedTextArea = document.querySelector('#password');
@@ -67,18 +67,22 @@ function userPrompts (){
   } 
 
   if (confirm('Include lowercase letters in your password?')) {
-   choiceArr = choiceArr.concat(lowerCaseArr);
+    console.log('User selected lowercase letters.')
+    choiceArr = choiceArr.concat(lowerCaseArr);
   }
 
   if (confirm('Include uppercase letters in your password?')) {
-   choiceArr = choiceArr.concat(upperCaseArr);
+    console.log('User selected uppercase letters.')
+    choiceArr = choiceArr.concat(upperCaseArr);
   }
 
   if (confirm('Include special characters in your password?')) {
+    console.log('User selected special characters.')
     choiceArr = choiceArr.concat(specialCharArr);
   }
 
   if (confirm('Include numbers in your password?')) {
+    console.log('User selected numbers.')
     choiceArr = choiceArr.concat(numberArr);
   }
   return true;
