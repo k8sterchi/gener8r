@@ -63,6 +63,7 @@ function userPrompts (){
   //if you type the right thing then this will return false
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert('Check that you are entering numerical digits between 8 and 128.');
+    console.log('User did not meet numeric length criteria.')
     return false;
   } 
 
